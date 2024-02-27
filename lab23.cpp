@@ -62,14 +62,14 @@ bool operator==(double s,const ComplexNumber &c){
 	else return false;
 }
 double ComplexNumber::abs(){
-	double a = pow(real,2);
-	double b = pow(imag,2);
-	double c = sqrt(a+b);
-	return c;
+	double x = pow(real,2);
+	double y = pow(imag,2);
+	double z = sqrt(x+y);
+	return z;
 }
 double ComplexNumber::angle(){
-	double a =atan2(imag,real)*57.2957795;
-	return a; 
+	double result =atan2(imag,real)*57.2957795;
+	return result; 
 }
 
 ostream & operator <<(ostream &os , const ComplexNumber &c){
